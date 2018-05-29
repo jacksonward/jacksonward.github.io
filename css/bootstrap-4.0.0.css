@@ -4949,7 +4949,8 @@ tbody.collapse.show {
 }
 
 .latest {
-  background-color: #e9ecef;
+	background-color: #e9ecef;
+	padding-top: 30px;
 }
 
 .alert {
