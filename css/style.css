@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* paletton color scheme: http://www.paletton.com/#uid=53m0u0k7Ch-3LrR5Qmj93bLge9G */
+
+body {
+  background-color: #2A373A;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+h1, h2, h3, h4, address {
+  font-family: "Montserrat", sans-serif;
+  color: #516A57;
+}
+
+h1 {
+  font-size: 80px; 
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+address {
+  padding-top: 75px;
+  font-size: 25px;
+}
+
+a:link {
+  color: #94A898;
+}
+
+a:visited {
+  color: #1D3A23;
+}
+
+p, li {
+  font-family: "Roboto", sans-serif;
+  color: #798689;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.splash {
+  width: 100%;
+  height: 100vh;
+  background-color: #182C2F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash h3 {
+  padding-top: 20px;
+}
+
+.splash img {
+  width: 10%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+}
+
+.content h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.content p {
+  padding-bottom: 80px;
+}
+
+.strategies, .tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+p.p-slimmed {
+  width: 50%;
+  text-align: center;
+}
+
+.strategies img {
+  width: 75px;
+  height: 75px;
+}
+
+.strategies ul {
+  width: 100%;
+  display: flex;
+}
+
+.strategies li {
+  margin: auto;
+  width: 20vw;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.strategies li p {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.tools {
+  width: 100vw;
+  background-color: #182C2F;
+}
+
+.technologies {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.technologies img {
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.desc {
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
