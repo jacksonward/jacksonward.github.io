@@ -71,7 +71,9 @@ ul {
 }
 
 .splash h3 {
+  width: 80%;
   padding-top: 20px;
+  text-align: center;
 }
 
 .splash img {
@@ -79,6 +81,16 @@ ul {
   height: 5%;
   position: absolute;
   bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .splash h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
 }
 
 .content h2 {
@@ -103,12 +115,12 @@ p.p-slimmed {
 }
 
 .strategies img {
-  width: 75px;
-  height: 75px;
+  width: 4vw;
+  height: 4vw;
 }
 
 .strategies ul {
-  width: 100%;
+  width: 80%;
   display: flex;
 }
 
@@ -116,8 +128,7 @@ p.p-slimmed {
   margin: auto;
   width: 20vw;
   text-align: center;
-  justify-items: center;
-  align-items: center;
+  align-items: space-around;
 }
 
 .strategies li p {
@@ -126,6 +137,34 @@ p.p-slimmed {
   margin: auto;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .strategies {
+    width: 100vw;
+  }
+
+  .strategies img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .strategies ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .strategies li {
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+    align-items: space-around;
+  }
+
+  p.p-slimmed {
+    width: 90%;
+  }
 }
 
 .tools {
@@ -149,6 +188,16 @@ p.p-slimmed {
 
 .desc {
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .technologies {
+    width: 100%;
+  }
+
+  .technologies img {
+    padding: 10px;
+  }
 }
 
 footer {
