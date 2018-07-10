@@ -102,7 +102,7 @@ ul {
   padding-bottom: 80px;
 }
 
-.strategies, .tools {
+.strategies, .tools, .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,6 +172,8 @@ p.p-slimmed {
   background-color: #182C2F;
 }
 
+
+
 .technologies {
   width: 75%;
   display: flex;
@@ -181,6 +183,20 @@ p.p-slimmed {
 
 .technologies img {
   width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sites {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.sites img {
+  width: 30vw;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -197,6 +213,10 @@ p.p-slimmed {
 
   .technologies img {
     padding: 10px;
+  }
+
+  .sites img {
+    width: 80vw;
   }
 }
 
