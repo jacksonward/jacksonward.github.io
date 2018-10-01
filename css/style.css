@@ -77,11 +77,11 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #E5C07B;
 }
 
 .splash h3 {
   width: 80%;
-  padding-top: 20px;
   text-align: center;
 }
 
@@ -90,6 +90,16 @@ ul {
   height: 5%;
   position: absolute;
   bottom: 0;
+}
+
+#githubProfile {
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
 }
 
 @media (max-width: 500px) {
@@ -185,6 +195,8 @@ p.p-slimmed {
 .tools {
   width: 100vw;
   background-color: #282C34;
+  border-bottom: 1px solid #E5C07B;
+  border-top: 1px solid #E5C07B;
 }
 
 .technologies {
@@ -209,10 +221,15 @@ p.p-slimmed {
 }
 
 .sites img {
-  width: 30vw;
+  width: 28vw;
+  height: 17vw;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.sites img:hover {
+  border: 2px solid #E5C07B;
 }
 
 .desc {
