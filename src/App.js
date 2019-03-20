@@ -25,12 +25,7 @@ import Project from './Project.js'
 import Principle from './Principle.js'
 
 
-const meObject = 
-`let Jackson = {
-  location: Fayetteville,
-  occupation: student,
-  major: psychology
-}`
+// const meObject = 
 
 class App extends Component {
   render() {
@@ -51,8 +46,16 @@ class App extends Component {
                     <h1 className="title has-text-white">
                       Jackson Ward
                     </h1>
-                      <pre className="box splashBox">
-                          { meObject }
+                      <pre className="box has-background-dark has-text-light splashBox">
+                          {
+                          <div>
+                            <p>let <span className="has-text-success">Jackson</span> = {`{`}</p>
+                            <p> location: <span className="has-text-danger">"Fayetteville"</span>,</p>
+                            <p> occupation: <span className="has-text-warning">"student"</span>,</p>
+                            <p> major: <span className="has-text-primary">"psychology"</span></p>
+                            <p>{`}`}</p>
+                          </div>
+                          }
                       </pre>
                   <div className="columns">
                     <div className="column">
