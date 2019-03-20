@@ -20,12 +20,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import hljs from 'highlight.js';
-import "highlight.js/styles/dark.css";
-
 import Icon from './Icon.js'
 import Project from './Project.js'
 import Principle from './Principle.js'
+
 
 const meObject = 
 `let Jackson = {
@@ -35,20 +33,6 @@ const meObject =
 }`
 
 class App extends Component {
-  componentDidMount() {
-    this.updateCodeSyntaxHighlighting();
-  }
-
-  componentDidUpdate() {
-    this.updateCodeSyntaxHighlighting();
-  }
-
-  updateCodeSyntaxHighlighting = () => {
-    document.querySelectorAll("pre").forEach(block => {
-      hljs.highlightBlock(block);
-    });
-  };
-
   render() {
     return (
       <div className="App is-family-code has-background-dark">
