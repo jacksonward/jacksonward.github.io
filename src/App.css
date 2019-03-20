@@ -4,7 +4,8 @@
 
 @media screen and (max-width: 768px) {
 .is-fullwidth-mobile {
-  display: flex;
+  display: flex !important;
+  flex-direction: column !important;
   width: 100% !important;
   margin: 0 !important;
   margin-top: 1em !important;
