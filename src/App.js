@@ -19,25 +19,29 @@ import {
   faAngleDown
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//particlesJS does not work with regular imports well, so just import the file
+import particlesJS from 'particles.js'
 
 import Icon from './Icon.js'
 import Project from './Project.js'
 import Principle from './Principle.js'
 
-
-// const meObject = 
-
 class App extends Component {
+
+  componentDidMount = () => {
+    window.particlesJS.load('particles-js', './particles.json', null);
+  }
   render() {
     return (
       <div className="App is-family-code has-background-dark">
+        <div id="particles-js"></div>
         <section className="hero is-primary is-fullheight is-bold">
           <div className="hero-head">
             <div className="container">
             </div>
             </div>
             <div className="hero-body columns">
-              <div className="column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
+              <div className="on-top column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
                 <div className="columns">
                   <div className="column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
                     <h2 className="subtitle has-text-white">
@@ -46,7 +50,7 @@ class App extends Component {
                     <h1 className="title has-text-white">
                       Jackson Ward
                     </h1>
-                      <pre className="box has-background-dark has-text-light splashBox">
+                      <pre className="slide-in on-top box has-background-dark has-text-light splashBox">
                           {
                           <div>
                             <p>let <span className="has-text-success">Jackson</span> = {`{`}</p>
@@ -152,7 +156,7 @@ class App extends Component {
           </div>
         </section>
         <footer className="footer is-paddingless has-background-dark">
-          <div class="content has-text-centered has-text-info">
+          <div className="content has-text-centered has-text-info">
             <p>
             © Jackson Ward | 2019
             </p>

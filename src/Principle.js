@@ -5,7 +5,7 @@ export class Principle extends Component {
   render() {
     return (
       <div 
-      className="column box is-fullwidth-mobile has-background-light has-text-centered" 
+      className="staggering-box column box is-fullwidth-mobile has-background-light has-text-centered" 
       style={{margin: "1em"}}>
         <span className="has-text-primary">
           <FontAwesomeIcon icon={this.props.icon} size="2x"/>
