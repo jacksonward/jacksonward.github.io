@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Project extends Component {
   render() {
     return (
-      <div className="column box is-fullwidth-mobile has-background-light has-text-left" 
+      <div className="column is-one-third box is-fullwidth-mobile has-background-light has-text-left" 
       style={{position: "relative", margin: "1em", paddingBottom: "3em", marginBottom: "0 !important"}}>
         <h2 className="has-text-primary">{this.props.name}</h2>
         <p className="has-text-dark">{this.props.description}</p>

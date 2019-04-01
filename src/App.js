@@ -153,6 +153,11 @@ class App extends Component {
             and prescribes educational resources based on their less-developed facets."
             link="https://github.com/jacksonward/omoo.io"
             />
+            <Project
+            name="Chef++"
+            description="An upgraded version of Chef Botardee that is much faster and allows for more functionality by interacting directly with the api."
+            link="https://github.com/jacksonward/chefBot"
+            />
           </div>
         </section>
         <footer className="footer is-paddingless has-background-dark">
