@@ -160,7 +160,7 @@ class App extends Component {
             />
             <Project
             name="Open Chords"
-            description="A cross-platform open-source app that displays chord data retrievd from my Chord Scraper on mobile."
+            description="A cross-platform open-source app that displays chord data retrieved from my Chord Scraper on mobile."
             link="https://github.com/jacksonward/open-chords"
             />
           </div>
