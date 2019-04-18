@@ -44,9 +44,9 @@ class App extends Component {
             </div>
             </div>
             <div className="hero-body columns">
-              <div className="on-top column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
+              <div style={{pointerEvents: 'none'}} className="on-top column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
                 <div className="columns">
-                  <div className="column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
+                <div style={{ pointerEvents: 'auto' }} className="column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
                     <h2 className="subtitle has-text-white">
                        {`// Web Developer`}
                     </h2>
