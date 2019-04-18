@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './index.css'
 import './App.css';
 import 'bulma/css/bulma.css'
 import {
@@ -147,24 +148,26 @@ class App extends Component {
             campus eatery menus, meal trade times, and more!"
             link="https://github.com/jacksonward/hungryBot"
             />
-            <Project 
-            name="Omoo" 
-            description="A site that interprets a user's personality data 
-            and prescribes educational resources based on their less-developed facets."
-            link="https://github.com/jacksonward/omoo.io"
-            />
             <Project
             name="Chef++"
             description="An upgraded version of Chef Botardee that is much faster and allows for more functionality by interacting directly with the api."
             link="https://github.com/jacksonward/chefBot"
             />
+            <Project
+            name="Chord Scraper"
+            description="An Ultimate-Guitar Scraper that fetches and stores chord info for requested songs."
+            link="https://github.com/jacksonward/chord-scraper"
+            />
+            <Project
+            name="Open Chords"
+            description="A cross-platform open-source app that displays chord data retrievd from my Chord Scraper on mobile."
+            link="https://github.com/jacksonward/open-chords"
+            />
           </div>
         </section>
         <footer className="footer is-paddingless has-background-dark">
           <div className="content has-text-centered has-text-info">
-            <p>
-            © Jackson Ward | 2019
-            </p>
+            <p>{`Made with <3 by Jackson Ward | 2019`}</p>
           </div>
         </footer>
       </div>
