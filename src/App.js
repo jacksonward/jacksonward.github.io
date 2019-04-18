@@ -10,7 +10,7 @@ import {
   faNodeJs,
   faDigitalOcean,
   faAws,
-  faReact
+  faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faEnvelope,
@@ -20,10 +20,12 @@ import {
   faAngleDown
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import firebaseIcon from './firebase.svg'
 //particlesJS does not work with regular imports well, so just import the file
 import particlesJS from 'particles.js'
 
 import Icon from './Icon.js'
+import SVG from './SVG.js'
 import Project from './Project.js'
 import Principle from './Principle.js'
 
@@ -120,11 +122,11 @@ class App extends Component {
           }}>
             <h1 className="title has-text-centered has-text-dark">Kit and Caboodle</h1>
             <div className="columns is-mobile is-multiline has-text-centered has-text-dark" style={{width: "90%", justifyContent: "center", margin: "auto", marginTop: "3em"}}>
-              <Icon name="html" icon={faHtml5}></Icon>
-              <Icon name="css" icon={faCss3}></Icon>
+              <Icon name="HTML" icon={faHtml5}></Icon>
+              <Icon name="CSS" icon={faCss3}></Icon>
               <Icon name="JavaScript" icon={faJs}></Icon>
-              <Icon name="nodejs" icon={faNodeJs}></Icon>
-              <Icon name="Digital Ocean" icon={faDigitalOcean}></Icon>
+              <Icon name="Nodejs" icon={faNodeJs}></Icon>
+              <SVG name="Firebase" svg={firebaseIcon}></SVG>
               <Icon name="GitHub" icon={faGithub}></Icon>
               <Icon name="AWS" icon={faAws}></Icon>
               <Icon name="React" icon={faReact}></Icon>
