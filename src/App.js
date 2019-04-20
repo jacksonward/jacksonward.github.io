@@ -46,14 +46,14 @@ class App extends Component {
             <div className="hero-body columns">
               <div style={{pointerEvents: 'none'}} className="on-top column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
                 <div className="columns">
-                <div style={{ pointerEvents: 'auto' }} className="column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
-                    <h2 className="subtitle has-text-white">
+                <div style={{ pointerEvents: 'none' }} className="column is-narrow-mobile is-half-tablet is-half-desktop is-offset-one-quarter">
+                  <h2 className="subtitle has-text-white">
                        {`// Web Developer`}
                     </h2>
-                    <h1 className="title has-text-white">
+                  <h1 className="title has-text-white">
                       Jackson Ward
                     </h1>
-                      <pre className="slide-in on-top box has-background-dark has-text-light splashBox">
+                  <pre style={{ pointerEvents: 'auto' }} className="slide-in on-top box has-background-dark has-text-light splashBox">
                           {
                           <div>
                             <p>let <span className="has-text-success">Jackson</span> = {`{`}</p>
@@ -65,7 +65,7 @@ class App extends Component {
                           }
                       </pre>
                   <div className="columns">
-                    <div className="column">
+                    <div style={{ pointerEvents: 'auto' }} className="column">
                       <a href="https://github.com/jacksonward" target="_blank" className="button is-medium is-info">
                         <span className="icon">
                           <FontAwesomeIcon icon={faGithub}/>
@@ -74,7 +74,7 @@ class App extends Component {
                       </a>
                     </div>
                     <div className="column">
-                      <a href="mailto: jackson.ward21@gmail.com" target="_blank" className="button is-medium is-info">
+                      <a style={{ pointerEvents: 'auto' }} href="mailto: jackson.ward21@gmail.com" target="_blank" className="button is-medium is-info">
                         <span className="icon">
                           <FontAwesomeIcon icon={faEnvelope}/>
                         </span>
