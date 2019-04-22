@@ -8,7 +8,7 @@ export class Icon extends Component {
         <span className="has-text-primary">
           <FontAwesomeIcon icon={this.props.icon} size="5x"/>
         </span>
-        <p>{this.props.name}</p>
+        <p className="has-text-light">{this.props.name}</p>
       </div>
     )
   }

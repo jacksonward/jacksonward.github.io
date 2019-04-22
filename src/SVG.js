@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { faBluetooth } from '@fortawesome/free-brands-svg-icons';
 
 export default class SVG extends Component {
   render() {
@@ -10,7 +9,7 @@ export default class SVG extends Component {
             height: 73.5,
             width: 73.5,
         }} src={this.props.svg} />
-        <p>{this.props.name}</p>
+        <p className="has-text-light">{this.props.name}</p>
       </div>
     )
   }

@@ -8,7 +8,6 @@ import {
   faCss3,
   faJs,
   faNodeJs,
-  faDigitalOcean,
   faAws,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
@@ -31,14 +30,49 @@ import Principle from './Principle.js'
 
 class App extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      arrowOpacity: 1
+    }
+  }
+
   componentDidMount = () => {
     window.particlesJS.load('particles-js', './particles.json', null);
+    window.addEventListener('scroll', this.handleScroll);
   }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (this.scrollIcon !== null) {
+
+      if (window.pageYOffset > 200) {
+        this.setState({
+          arrowOpacity: 0
+        })
+      } else {
+        this.setState({
+          arrowOpacity: 1 / (.05 * window.pageYOffset)
+        })
+      }
+    }
+  }
+
   render() {
     return (
-      <div className="App is-family-code has-background-dark">
-        <div id="particles-js"></div>
-        <section className="hero is-primary is-fullheight is-bold">
+      <div 
+      style={{
+      }}
+      className="App has-background-primary is-family-code">
+        <div 
+        style={{
+          position: "fixed"
+        }}
+        id="particles-js"></div>
+        <section className="on-top hero is-fullheight is-bold">
           <div className="hero-head">
             <div className="container">
             </div>
@@ -66,7 +100,7 @@ class App extends Component {
                       </pre>
                   <div className="columns">
                     <div style={{ pointerEvents: 'auto' }} className="column">
-                      <a href="https://github.com/jacksonward" target="_blank" className="button is-medium is-info">
+                      <a href="https://github.com/jacksonward" target="_blank" rel="noopener noreferrer" className="button is-medium is-info">
                         <span className="icon">
                           <FontAwesomeIcon icon={faGithub}/>
                         </span>
@@ -74,7 +108,7 @@ class App extends Component {
                       </a>
                     </div>
                     <div className="column">
-                      <a style={{ pointerEvents: 'auto' }} href="mailto: jackson.ward21@gmail.com" target="_blank" className="button is-medium is-info">
+                      <a style={{ pointerEvents: 'auto' }} href="mailto: jackson.ward21@gmail.com" target="_blank" rel="noopener noreferrer" className="button is-medium is-info">
                         <span className="icon">
                           <FontAwesomeIcon icon={faEnvelope}/>
                         </span>
@@ -87,10 +121,14 @@ class App extends Component {
               </div>
             </div>
           <div className="hero-foot level has-text-centered is-mobile">
-          <FontAwesomeIcon icon={faAngleDown} className="level-item has-text-centered" size="2x"/>
+          <FontAwesomeIcon
+          style={{
+            opacity: this.state.arrowOpacity
+          }}
+          icon={faAngleDown} className="level-item has-text-centered" size="2x"/>
           </div>
         </section>
-        <section className="section projectsColumns has-background-dark">
+        <section className="on-top section projectsColumns">
           <h1 className="title has-text-centered has-text-white">Dev Principles</h1>
           <div className="columns principlesColumns is-multiline has-text-centered" style={{width: "90%", justifyContent: "center", margin: "auto"}}>
             <Principle
@@ -113,15 +151,21 @@ class App extends Component {
             />
           </div>
         </section>
-        <section className="section has-background-dark">
+        <section className="on-top section">
         <div className="container">
         <div className="columns is-centered">
-          <div className="column is-full has-background-light is-fullwidth-mobile" style={{
+          <div className="column box is-full has-background-dark is-fullwidth-mobile" style={{
             width: "90%",
             borderRadius: "1em"
           }}>
-            <h1 className="title has-text-centered has-text-dark">Kit and Caboodle</h1>
-            <div className="columns is-mobile is-multiline has-text-centered has-text-dark" style={{width: "90%", justifyContent: "center", margin: "auto", marginTop: "3em"}}>
+            <h1 className="title has-text-centered has-text-light">Kit and Caboodle</h1>
+            <div className="columns is-mobile is-multiline has-text-centered has-text-dark" 
+            style={{
+              width: "90%", 
+              justifyContent: "center", 
+              margin: "auto", 
+              marginTop: "3em",
+              }}>
               <Icon name="HTML" icon={faHtml5}></Icon>
               <Icon name="CSS" icon={faCss3}></Icon>
               <Icon name="JavaScript" icon={faJs}></Icon>
@@ -135,7 +179,7 @@ class App extends Component {
         </div>
         </div>
         </section>
-        <section className="section projectsColumns has-background-dark">
+        <section className="on-top section projectsColumns">
           <h1 className="title has-text-centered has-text-light">My Projects</h1>
           <div className="columns projectsColumns is-multiline has-text-centered" style={{width: "90%", justifyContent: "center", margin: "auto"}}>
             <Project 
@@ -167,9 +211,13 @@ class App extends Component {
             />
           </div>
         </section>
-        <footer className="footer is-paddingless has-background-dark">
-          <div className="content has-text-centered has-text-info">
-            <p>{`Made with <3 by Jackson Ward | 2019`}</p>
+        <footer className="footer has-background-primary is-paddingless">
+          <div className="content has-text-centered has-text-light">
+            <p
+            style={{
+              fontWeight: '700'
+            }}
+            >{`Made with <3 by Jackson Ward | 2019`}</p>
           </div>
         </footer>
       </div>
