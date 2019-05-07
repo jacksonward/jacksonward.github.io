@@ -48,7 +48,6 @@ class App extends Component {
 
   handleScroll = () => {
     if (this.scrollIcon !== null) {
-
       if (window.pageYOffset > 200) {
         this.setState({
           arrowOpacity: 0
