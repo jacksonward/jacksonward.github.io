@@ -1,16 +1,17 @@
 {
   "main.css": "/static/css/main.028f507d.chunk.css",
-  "main.js": "/static/js/main.431e8e75.chunk.js",
-  "main.js.map": "/static/js/main.431e8e75.chunk.js.map",
+  "main.js": "/static/js/main.f7d57ffb.chunk.js",
+  "main.js.map": "/static/js/main.f7d57ffb.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
   "static/css/2.4f415e10.chunk.css": "/static/css/2.4f415e10.chunk.css",
-  "static/js/2.4b267ab4.chunk.js": "/static/js/2.4b267ab4.chunk.js",
-  "static/js/2.4b267ab4.chunk.js.map": "/static/js/2.4b267ab4.chunk.js.map",
+  "static/js/2.94cf4420.chunk.js": "/static/js/2.94cf4420.chunk.js",
+  "static/js/2.94cf4420.chunk.js.map": "/static/js/2.94cf4420.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.d7bd6696f40e0d6934f461056a6252c2.js": "/precache-manifest.d7bd6696f40e0d6934f461056a6252c2.js",
+  "precache-manifest.21de9e69b188c6d3e07f0bc7a5dae701.js": "/precache-manifest.21de9e69b188c6d3e07f0bc7a5dae701.js",
   "service-worker.js": "/service-worker.js",
   "static/css/2.4f415e10.chunk.css.map": "/static/css/2.4f415e10.chunk.css.map",
   "static/css/main.028f507d.chunk.css.map": "/static/css/main.028f507d.chunk.css.map",
-  "static/media/firebase.svg": "/static/media/firebase.eb66c603.svg"
+  "static/media/firebase.svg": "/static/media/firebase.eb66c603.svg",
+  "static/media/netlify.svg": "/static/media/netlify.1980f30c.svg"
 }
