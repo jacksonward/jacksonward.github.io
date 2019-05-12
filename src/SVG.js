@@ -5,6 +5,7 @@ export default class SVG extends Component {
     return (
       <div className="column">
         <img style={{
+          fill: 'hsl(171, 100%, 41%)',
             // Who doesn't like magic numbers?
             height: 73.5,
             width: 73.5,

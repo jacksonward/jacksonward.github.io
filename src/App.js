@@ -20,6 +20,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import firebaseIcon from './firebase.svg'
+import netlifyIcon from './netlify.svg'
 //particlesJS does not work with regular imports well, so just import the file
 import particlesJS from 'particles.js'
 
@@ -170,6 +171,7 @@ class App extends Component {
               <Icon name="JavaScript" icon={faJs}></Icon>
               <Icon name="Nodejs" icon={faNodeJs}></Icon>
               <SVG name="Firebase" svg={firebaseIcon}></SVG>
+              <SVG name="Netlify" svg={netlifyIcon}></SVG>
               <Icon name="GitHub" icon={faGithub}></Icon>
               <Icon name="AWS" icon={faAws}></Icon>
               <Icon name="React" icon={faReact}></Icon>
@@ -180,7 +182,7 @@ class App extends Component {
         </section>
         <section className="on-top section projectsColumns">
           <h1 className="title has-text-centered has-text-light">My Projects</h1>
-          <div className="columns projectsColumns is-multiline has-text-centered" style={{width: "90%", justifyContent: "center", margin: "auto"}}>
+          <div className="columns projectsColumns is-multiline has-text-centered" style={{width: "100%", justifyContent: "center", margin: "auto"}}>
             <Project 
             name="Big-5 Personality Test" 
             description="A 100 Question personality test that uses the big-5 model 
