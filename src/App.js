@@ -16,7 +16,8 @@ import {
   faBreadSlice,
   faCode,
   faClock,
-  faAngleDown
+  faAngleDown,
+  faHeart
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import firebaseIcon from './firebase.svg'
@@ -115,6 +116,7 @@ class App extends Component {
                         <span>Email</span>
                       </a>
                     </div>
+                    <div className="column"></div>
                   </div>
                   </div>
                 </div>
@@ -210,15 +212,20 @@ class App extends Component {
             description="A cross-platform open-source app that displays chord data retrieved from my Chord Scraper on mobile."
             link="https://github.com/jacksonward/open-chords"
             />
+            <Project
+            name="Pitch-Light"
+            description="An application that uses sound frequency to detect pitch and display colors based on that pitch."
+            link="https://github.com/jacksonward/pitch-light"
+            />
           </div>
         </section>
         <footer className="footer has-background-primary is-paddingless">
-          <div className="content has-text-centered has-text-light">
+          <div className="content has-text-centered has-text-dark">
             <p
             style={{
               fontWeight: '700'
             }}
-            >{`Made with <3 by Jackson Ward | 2019`}</p>
+            >Made with <span className="has-text-danger"><FontAwesomeIcon icon={faHeart}/></span> by Jackson Ward | {new Date().getFullYear()}</p>
           </div>
         </footer>
       </div>
